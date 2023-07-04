@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else{
                         float num = Float.parseFloat(number);
-                        float ans = num*10;
+                        float ans = num*1000;
                         String Answer = Float.toString(ans);
                         output1.setText(Answer +"  mm");
                     }
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else{
                         float num = Float.parseFloat(number);
-                        float ans = num/10;
+                        float ans = num/1000;
                         String Answer = Float.toString(ans);
                         output1.setText(Answer +"  m");
                     }

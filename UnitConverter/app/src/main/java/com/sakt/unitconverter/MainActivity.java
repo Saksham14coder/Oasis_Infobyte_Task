@@ -35,20 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 String item = parent.getItemAtPosition(position).toString();
                 Toast.makeText(MainActivity.this, item, Toast.LENGTH_SHORT).show();
 
-                if(id==56){
-
-                    String number = value.getText().toString();
-                    if (number.isEmpty()){
-                        Toast.makeText(MainActivity.this, "Enter Value", Toast.LENGTH_SHORT).show();
-                    }else{
-                        float F2 = Float.parseFloat(number);
-                        float FA = ((F2 - 32)*5)/9;
-                        String Answer = Float.toString(FA);
-                        output1.setText(Answer +"  C");
-                    }
-
-                    Toast.makeText(MainActivity.this, "Fahrenheit to Celsius", Toast.LENGTH_SHORT).show();
-                }else if(id==0){
+               if(id==0){
 
                     String number = value.getText().toString();
                     if (number.isEmpty()){
@@ -199,19 +186,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "ft to m", Toast.LENGTH_SHORT).show();
                 }
 
-                else if(id==22){
-
-                    String number = value.getText().toString();
-                    if (number.isEmpty()){
-                        Toast.makeText(MainActivity.this, "Enter Value", Toast.LENGTH_SHORT).show();
-                    }
-                    float C2 = Float.parseFloat(number);
-                    float FA = (C2*9/5)+32;
-                    String Answer = Float.toString(FA);
-                    output1.setText(Answer+" F");
-
-                    Toast.makeText(MainActivity.this, "Celsius to Fahrenheit", Toast.LENGTH_SHORT).show();
-                }
+                
             }
         });
 
